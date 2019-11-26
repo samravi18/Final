@@ -13,3 +13,5 @@ dev.off()
 
 t.test(beer$drinkingMinutes ~ beer$glassShape, data = beer, var.equal = TRUE)
 
+
+
