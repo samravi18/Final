@@ -11,3 +11,5 @@ pdf("Beerboxplot.pdf")
 boxplot(drinkingMinutes ~ glassShape, data = beer)
 dev.off()
 
+t.test(beer$drinkingMinutes ~ beer$glassShape, data = beer, var.equal = TRUE)
+
