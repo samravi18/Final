@@ -1,7 +1,4 @@
-install.packages("readxl")
-Yes
-library("readxl")
-beer <- read_excel(file.choose())
+beer <- read.csv(url("https://whitlockschluter.zoology.ubc.ca/wp-content/data/chapter12/chap12q32BeerGlassShape.csv"))
 head(beer)
 
 
@@ -16,8 +13,7 @@ yourOutput<-t.test(beer$drinkingMinutes ~ beer$glassShape, data = beer, var.equa
 cat("Results", file = "tests.txt", append = TRUE)
 capture.output(yourOutput, file = "tests.txt", append = TRUE)
 
-# Test through one command
-yourOutput
+
 
 
 
