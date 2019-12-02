@@ -1,0 +1,12 @@
+Results
+	Two Sample t-test
+
+data:  beer$drinkingMinutes by beer$glassShape
+t = 3.3977, df = 17, p-value = 0.003425
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+  2.774455 11.864878
+sample estimates:
+mean in group straight   mean in group curved 
+             14.913000               7.593333 
+

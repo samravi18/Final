@@ -11,8 +11,13 @@ pdf("Beerboxplot.pdf")
 boxplot(drinkingMinutes ~ glassShape, data = beer)
 dev.off()
 
+yourOutput<-t.test(beer$drinkingMinutes ~ beer$glassShape, data = beer, var.equal = TRUE)
 
-t.test(beer$drinkingMinutes ~ beer$glassShape, data = beer, var.equal = TRUE)
-#Code used to save output. It also saves the history of other outputs.
-sink("newconsole.txt")
-savehistory("newconsole.txt")
+# Test through one command
+yourOutput
+
+as.data.frame(yourOutput)
+
+
+
+
