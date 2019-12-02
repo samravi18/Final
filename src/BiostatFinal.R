@@ -12,12 +12,12 @@ boxplot(drinkingMinutes ~ glassShape, data = beer)
 dev.off()
 
 yourOutput<-t.test(beer$drinkingMinutes ~ beer$glassShape, data = beer, var.equal = TRUE)
+#Saves results in a textfile
+cat("Results", file = "tests.txt", append = TRUE)
+capture.output(yourOutput, file = "tests.txt", append = TRUE)
 
 # Test through one command
 yourOutput
-
-as.data.frame(yourOutput)
-
 
 
 
