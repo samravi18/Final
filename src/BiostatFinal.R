@@ -13,7 +13,8 @@ yourOutput<-t.test(beer$drinkingMinutes ~ beer$glassShape, data = beer, var.equa
 cat("Results", file = "tests.txt", append = TRUE)
 capture.output(yourOutput, file = "tests.txt", append = TRUE)
 
-
+#one push button for all code: the boxplot will appeared as a saved file. The textfile titled tests.txt will have the saved t-test output.
+source("BiostatFinal.R")
 
 
 

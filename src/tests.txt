@@ -10,3 +10,5 @@ sample estimates:
 mean in group straight   mean in group curved 
              14.913000               7.593333 
 
+
+
